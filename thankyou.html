@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Thank You</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background:#759196;
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            margin: 20px; /* Margin applied to all sides of the page */
+        }
+
+        .donation-box {
+            flex: 0 0 30%; /* Adjust the width of the left box */
+            height: 60vh;
+            background-color: #202327; /* Background color for the boxes */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            animation: slideInLeft 1s ease-in-out forwards;
+            margin-left:6%;
+        }
+
+        .thank-you-box {
+            flex: 0 0 68%; /* Adjust the width of the right box */
+            height: 80vh;
+            background-color: #759196 ;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            position: relative;
+            animation: slideInRight 1s ease-in-out forwards;
+            margin-right:8%;
+        }
+
+        @keyframes slideInLeft {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="donation-box">
+          <center>  <img src="static/pics/thank.png" alt="Donation Pic" style="max-width: 100%; height: auto;"></center>
+        </div>
+        <div class="thank-you-box">
+<center><img src="static/pics/thankyou.png" alt="thankyou Pic" style="max-width: 100%; height: auto;"></center>
+                 
+    </div>
+</body>
+</html>

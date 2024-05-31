@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Home</title>
+    <style>
+    .hero {
+      width: 100%;
+      height: 600px;
+      background: url(static/pics/bg.png);
+      background-size: cover;
+    }
+    
+    .homeimg {
+      width: 500px;
+      height: 520px;
+      position: relative;
+      left: 40rem;
+      bottom: 36rem;
+    }
+    
+    .content {
+      position: absolute;
+      top: 35%;
+      left: 6%;
+      height: 500px;
+    }
+    
+    .content .title {
+      color: #0a0a0a;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      display: inline-block;
+      margin-bottom: 20px;
+      background: linear-gradient(120deg,
+          #1c99fe 20.69%,
+          #7644ff 50.19%,
+          #fd4766 79.69%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .content h1 {
+      color: #1f1f25;
+      font-size: 75px;
+      font-weight: 900;
+      line-height: 90px;
+      text-transform: inherit;
+      width: 70%;
+      font-family: 'Aclonica', sans-serif;
+    
+    }
+    
+    .content h1 span {
+      color: #fd4766;
+      font-family: 'Aclonica', sans-serif;
+    }
+    
+    .content p {
+      width: 55%;
+      color: #1a1919;
+      margin-top: 25px;
+      margin-bottom: 30px;
+      font-family: 'Comic Neue', cursive;
+      font-size: 22.6px;
+      font-weight: 200;
+    
+    }
+        .image-container 
+           {
+              border: 5px solid #f3eded; 
+              overflow: hidden; 
+              width: 40%;
+              height: 425px;
+              background-color:rgb(230, 232, 236);
+              color:black;
+              text-align: center;
+              padding: 10px;
+          }
+  
+          .image-container img
+           {
+              width: 100%; 
+              height: auto;
+  
+          }
+  
+          .box-container {
+              flex:1;
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-end;
+              padding:120px;
+              background-color:rgb(239, 227, 227);
+          }
+          .navbar {
+    background-color: #343a40;
+    width: 100%; 
+    height: 80px;
+}
+
+.nav-link{
+    font-size: larger;
+    font-weight: 500;
+  }
+  .navbar-brand{
+    font-size:170%;
+     font-weight: 25px;
+    color: #fff;
+  }
+  </style>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+
+      <a class="navbar-brand" href="#">SHARE & CARE </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      
+      <span class="navbar-toggler-icon"></span>
+      
+      </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="/home">Home <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/aboutus">About Us <span class="sr-only"></span></a>
+                  </li>
+                  </ul>
+        </div>
+        
+    </nav>
+    <section class="hero">
+      <div class="content">
+        <span class="title">Lend a hand, give a can.</span>
+        <h1>Welcome to <span><br>Share & Care!</span></h1>
+        <p>
+          We are a team dedicated to offering nourishing meals to those who go to bed hungry each night and to reduce food waste by collecting surplus meals from individuals who typically discard extra food, ensuring that it reaches those in need.<br>Remember, even small food donations can make a big difference in someone's life!
+        </p>
+        <img src="static\pics\homepageimg.png" class="homeimg" />
+      </div>
+    </section>
+
+           
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <center>
+      <h1> OUR SERVICES </h1><br>
+      <p class="quote" style="font-size:25px;"><i> “Alone we can do so little, together we can do so much.”</i><b> — Helen Keller</b></p>
+   </center>
+     <div class="box-container">
+         <div class="image-container">
+              <center>
+               <h2>Donor</h2>
+               <a href="/donate"><img src="static\pics\Donor.png" alt="Your Image Description">
+              </a>
+              </center>
+         </div>  
+         <div class="image-container">
+            <center>
+             <h2>Receiver</h2>
+             <a href="/login"><img src="static\pics\Receiver.png" alt="Your Image Description">
+             </a>
+            </center>
+         </div>
+     </div>
+  <!-- <style>
+      /* body{
+          background-color: #f7f9f2;
+          color :white
+      } 
+       h1 
+{
+color: rgb(7, 6, 21);
+text-align: center;
+
+} 
+</style> -->
+</body>
+</html>
